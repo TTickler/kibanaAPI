@@ -20,6 +20,9 @@ def connect_to_es(es_address, username=None, password=None):
 def insert_panel_into_dashboard(panel, dashboard_id, es_index):
     
 
+'''deletes specified object ID from specified elasticsearch index.
+	Useful for replacing existing panels or dashboards with updated ones.'''
+def delete_kibana_object(es_index, element_id):
 
 
 '''returns created panel JSON for future Kibana indexing. Allows ease of 
